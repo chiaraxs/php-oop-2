@@ -23,7 +23,7 @@ class Food extends Products {
         $this->brand = $_brand;
         $this->expirationDate = $_expirationDate;
         $this->weight = $_weight;
-        $this->price = $_price;
+        $this-> price = $_price;
     }
 
     /**
