@@ -1,6 +1,9 @@
 <?php
 
 include __DIR__ . "/../classes/user.php";
+include __DIR__ . "/../classes/food.php";
+include __DIR__ . "/../classes/toys.php";
+include __DIR__ . "/../classes/accessoires.php";
 
 
 $users = [
@@ -15,4 +18,14 @@ $users = [
 
 ];
 
+$foods = [
+    new Food("Almo Nature", "12-03-23", 2),
+    new Food("Natural Trainer", "25-12-25", 4),
+    new Food("Royal Canin", "12-01-26", 10)
+];
+
 var_dump($users);
+var_dump($foods);
+
+
+?>
