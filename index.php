@@ -27,8 +27,13 @@ include __DIR__ . "/db/data.php";
 
 <body>
 
+    <!-- php -->
+    <?php foreach ($users as $user) { ?>
+        <h5> <?php echo ($user->getUserDetails()) ?></h5>
+    <?php } ?>
+    <!-- / php -->
 
-    
+
 </body>
 
 </html>

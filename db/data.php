@@ -4,6 +4,8 @@ include __DIR__ . "/../classes/user.php";
 include __DIR__ . "/../classes/food.php";
 include __DIR__ . "/../classes/toys.php";
 include __DIR__ . "/../classes/accessoires.php";
+include __DIR__ . "/../classes/cart.php";
+
 
 
 $users = [
