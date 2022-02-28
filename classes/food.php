@@ -17,6 +17,14 @@ class Food extends Products {
     // / variables
 
     // methods
+    public function __construct(string $_brand, string $_expirationDate, int $_weight, float $_price){
+        parent :: __construct($_productName, $_productCode, $_productType);
+
+        $this -> brand = $_brand;
+        $this -> expirationDate = $_expirationDate;
+        $this -> weight = $_weight;
+        $this -> price = $_price;
+    }
 
     /**
      * Get the value of brand

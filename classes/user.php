@@ -12,11 +12,10 @@ class User {
     protected string $email;
     protected int $phoneNumber;
     private bool $registered = false;
-    private int $creditCard;
     // / variables
 
     // construct
-    function __construct(string $_firstName, string $_lastName, string $_email, int $_phoneNumber, bool $_registered, int $_creditCard)
+    function __construct(string $_firstName, string $_lastName, string $_email, int $_phoneNumber, bool $_registered)
     
     {
         $this -> name = $_firstName;
@@ -24,14 +23,14 @@ class User {
         $this -> email = $_email;
         $this -> phoneNumber = $_phoneNumber;
         $this -> registered = $_registered;
-        $this-> creditCard = $_creditCard;
+       
     }
     // / construct
 
     // methods
     public function getUserDetails()
     {
-        return $this-> name . " " . $this-> surname . " " . $this-> email . " " . $this->phoneNumber . " " . $this->registered . " " . $this->creditCard;
+        return $this-> name . " " . $this-> surname . " " . $this-> email . " " . $this->phoneNumber . " " . $this->registered;
     }
 
     function getDiscount()

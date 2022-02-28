@@ -19,7 +19,7 @@ class Products {
     {
         $this -> productName = $_productName;
         $this -> productCode = $_productCode;
-        $this ->productType = $_productType;
+        $this -> productType = $_productType;
     }
     // / construct
 
