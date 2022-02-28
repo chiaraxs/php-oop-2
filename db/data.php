@@ -19,15 +19,15 @@ $users = [
 ];
 
 $foods = [
-    new Food("Almo Nature", "12-03-23", 2, 13,50),
-    new Food("Natural Trainer", "25-12-25", 4, 12),
-    new Food("Royal Canin", "12-01-26", 10, 29,99)
+    new Food("Mangime per animali",323,"Cibo","Almo Nature", "12-03-23", 2, 13.50),
+    new Food("Mangime per animali", 456, "Cibo", "Natural Trainer", "25-12-25", 4, 12),
+    new Food("Mangime per animali", 625, "Cibo", "Royal Canin", "12-01-26", 10, 29, 13.12)
 ];
 
 $toysList = [
-    new Toys("Dog World", "plastic","red", 15),
-    new Toys("Meow Cat", "plastic", "yellow", 20),
-    new Toys("Fish Ocean", "plastic", "green", 35)
+    new Toys("Giochi per animali", 123, "Giochi", "Dog World", "plastic","red", 15.35),
+     new Toys("Giochi per animali", 678, "Giochi", "Meow Cat", "plastic", "yellow", 20.03),
+     new Toys("Giochi per animali", 999, "Giochi", "Fish Ocean", "plastic", "green", 12.6)
 ];
 
 var_dump($users);

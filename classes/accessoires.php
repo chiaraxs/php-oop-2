@@ -17,7 +17,15 @@ class Accessoires extends Products {
     // / variables
 
     // methods
-    
+    public function __construct(string $_productName, int $_productCode, string $_productType, string $_brand, string $_materialAccessoires, string $_color, float $_price)
+    {
+        parent::__construct($_productName, $_productCode, $_productType);
+
+        $this->brand = $_brand;
+        $this->materialAccessoires = $_materialAccessoires;
+        $this->color = $_color;
+        $this->price = $_price;
+    }
     // / methods 
 
     /**

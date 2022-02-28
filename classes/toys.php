@@ -11,11 +11,20 @@ class Toys extends Products {
     // variables
     protected string $brand;
     protected string $material;
-    protected int $color;
+    protected string $color;
     protected float $price;
     // / variables
 
     // methods
+    public function __construct(string $_productName, int $_productCode, string $_productType, string $_brand, string $_material, string $_color, float $_price)
+    {
+        parent::__construct($_productName,$_productCode,$_productType);
+
+        $this->brand = $_brand;
+        $this->material = $_material;
+        $this->color = $_color;
+        $this->price = $_price;
+    }
     /**
      * Get the value of brand
      */ 
