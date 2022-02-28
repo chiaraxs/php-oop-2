@@ -1,5 +1,5 @@
 <!-- CLASSE FIGLIA DI PRODUCTS 
-QUI METTO ACCESSORI: CUCCE, GUINZAGLI, ANTIPULCI -->
+ACCESSORI: CUCCE, GUINZAGLI, ANTIPULCI -->
 
 
 <?php
@@ -13,6 +13,7 @@ class Accessoires extends Products {
     protected string $brand;
     protected string $materialAccessoires;
     protected int $color;
+    protected float $price;
     // / variables
 
     // methods
@@ -75,6 +76,26 @@ class Accessoires extends Products {
     public function setColor($color)
     {
         $this->color = $color;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of price
+     */ 
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * Set the value of price
+     *
+     * @return  self
+     */ 
+    public function setPrice($price)
+    {
+        $this->price = $price;
 
         return $this;
     }

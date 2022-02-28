@@ -13,6 +13,7 @@ class Food extends Products {
     protected string $brand;
     protected string $expirationDate;
     protected int $weight;
+    protected float $price;
     // / variables
 
     // methods
@@ -79,6 +80,26 @@ class Food extends Products {
     }
 
     // / methods
+
+    /**
+     * Get the value of price
+     */ 
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * Set the value of price
+     *
+     * @return  self
+     */ 
+    public function setPrice($price)
+    {
+        $this->price = $price;
+
+        return $this;
+    }
 }
 
 

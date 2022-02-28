@@ -19,9 +19,15 @@ $users = [
 ];
 
 $foods = [
-    new Food("Almo Nature", "12-03-23", 2),
-    new Food("Natural Trainer", "25-12-25", 4),
-    new Food("Royal Canin", "12-01-26", 10)
+    new Food("Almo Nature", "12-03-23", 2, 13,50),
+    new Food("Natural Trainer", "25-12-25", 4, 12),
+    new Food("Royal Canin", "12-01-26", 10, 29,99)
+];
+
+$toysList = [
+    new Toys("Almo Nature", "12-03-23", 2, 13, 50),
+    new Toys("Natural Trainer", "25-12-25", 4, 12),
+    new Toys("Royal Canin", "12-01-26", 10, 29, 99)
 ];
 
 var_dump($users);
