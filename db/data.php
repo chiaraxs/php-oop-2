@@ -17,35 +17,39 @@ $users = [
     new User("Brian", "Thoy", "brian@gmail", 3501290570, false),
     new User("Vanessa", "Jones", "vanessa@gmail", 320563476, true)
     
-
 ];
 
 $foodsList = [
+
     new Food("Mangime per animali", 323,"Cibo","Almo Nature", "12-03-23", 2, 13.50),
     new Food("Mangime per animali", 456, "Cibo", "Natural Trainer", "25-12-25", 4, 12),
     new Food("Mangime per animali", 625, "Cibo", "Royal Canin", "12-01-26", 10, 29, 13.12)
+    
 ];
 
 $toysList = [
+
     new Toys("Giochi per animali", 123, "Gioco per cani", "Dog World", "rubber","red", 15.35),
     new Toys("Giochi per animali", 678, "Gioco per gatti", "Meow Cat", "plastic", "yellow", 20.03),
     new Toys("Giochi per animali", 999, "Gioco per pesci", "Fish Ocean", "silicone", "green", 12.6)
+
 ];
 
 $accessoiresList = [
+
     new Toys("Accessori per animali", 897, "Collare", "Dog World", "leather", "white", 23.20),
     new Toys("Accessori per animali", 156, "Cuccia", "Meow Cat", "tissue", "black", 50.60),
     new Toys("Accessori per animali", 222, "Ciotola", "Fish Ocean", "plastic", "pink", 4)
+    
 ];
 
+$cart = [];
 
 
 var_dump($users);
 var_dump($foodsList);
 var_dump($toysList);
 var_dump($accessoiresList);
-
-$cart = [];
 
 
 ?>

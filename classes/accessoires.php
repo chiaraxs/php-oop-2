@@ -1,5 +1,5 @@
 <!-- CLASSE FIGLIA DI PRODUCTS 
-ACCESSORI: CUCCE, GUINZAGLI, ANTIPULCI -->
+ACCESSORI: CUCCE, GUINZAGLI, COLLARI -->
 
 
 <?php
@@ -17,8 +17,7 @@ class Accessoires extends Products {
     // / variables
 
     // methods
-    public function __construct(string $_productName, int $_productCode, string $_productType, string $_brand, string $_materialAccessoires, string $_color, float $_price)
-    {
+    public function __construct(string $_productName, int $_productCode, string $_productType, string $_brand, string $_materialAccessoires, string $_color, float $_price){
         parent::__construct($_productName, $_productCode, $_productType);
 
         $this->brand = $_brand;
@@ -27,7 +26,8 @@ class Accessoires extends Products {
         $this->price = $_price;
     }
     // / methods 
-
+    
+    // getter & setter
     /**
      * Get the value of brand
      */ 
@@ -107,7 +107,11 @@ class Accessoires extends Products {
 
         return $this;
     }
+    // / getter & setter
+    
 }
+
+// instances are in data.php
 
 
 

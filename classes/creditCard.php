@@ -22,10 +22,9 @@ class creditCard extends User{
         $this->cvv = $_cvv;
         $this->expiryDate = $_expiryDate;
     }
+    // / methods
 
-    
-    // / methods 
-
+    // getter & setter
     /**
      * Get the value of nameOwner
      */ 
@@ -125,6 +124,8 @@ class creditCard extends User{
 
         return $this;
     }
+    // / getter & setter
+
 }
 
 

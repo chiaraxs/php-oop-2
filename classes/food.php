@@ -25,7 +25,9 @@ class Food extends Products {
         $this->weight = $_weight;
         $this-> price = $_price;
     }
+    // / methods
 
+    // getter & setter
     /**
      * Get the value of brand
      */ 
@@ -45,7 +47,6 @@ class Food extends Products {
 
         return $this;
     }
-
 
     /**
      * Get the value of expirationDate
@@ -108,7 +109,9 @@ class Food extends Products {
 
         return $this;
     }
+    // / getter & setter
 }
 
+// instances are in data.php
 
 ?>

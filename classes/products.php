@@ -4,7 +4,7 @@
 3 ACCESSOIRES
  -->
 
- <?php
+<?php
 
 class Products {
 
@@ -17,14 +17,14 @@ class Products {
     // construct
     function __construct(string $_productName, int $_productCode, string $_productType)   
     {
-        $this -> productName = $_productName;
-        $this -> productCode = $_productCode;
-        $this -> productType = $_productType;
+        $this->productName = $_productName;
+        $this->productCode = $_productCode;
+        $this->productType = $_productType;
     }
     // / construct
 
-    // methods
-
+    
+    // getter & setter
     /**
      * Get the value of productName
      */ 
@@ -48,11 +48,11 @@ class Products {
     {
         return $this->productType;
     }
-
-    // / methods
+    // / getter & setter
     
-    // instances are in data.php
+    
 };
 
+// instances are in data.php
 
 ?>

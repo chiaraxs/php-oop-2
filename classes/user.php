@@ -18,12 +18,11 @@ class User {
     function __construct(string $_firstName, string $_lastName, string $_email, int $_phoneNumber, bool $_registered)
     
     {
-        $this -> name = $_firstName;
-        $this -> surname = $_lastName;
-        $this -> email = $_email;
-        $this -> phoneNumber = $_phoneNumber;
-        $this -> registered = $_registered;
-       
+        $this->name = $_firstName;
+        $this->surname = $_lastName;
+        $this->email = $_email;
+        $this->phoneNumber = $_phoneNumber;
+        $this->registered = $_registered;
     }
     // / construct
 
@@ -43,7 +42,6 @@ class User {
         else {
             return 0;
         }
-
     }
     // / methods 
 

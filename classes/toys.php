@@ -16,8 +16,7 @@ class Toys extends Products {
     // / variables
 
     // methods
-    public function __construct(string $_productName, int $_productCode, string $_productType, string $_brand, string $_material, string $_color, float $_price)
-    {
+    public function __construct(string $_productName, int $_productCode, string $_productType, string $_brand, string $_material, string $_color, float $_price){
         parent::__construct($_productName,$_productCode,$_productType);
 
         $this->brand = $_brand;
@@ -25,6 +24,9 @@ class Toys extends Products {
         $this->color = $_color;
         $this->price = $_price;
     }
+    // methods
+    
+    // getter & setter
     /**
      * Get the value of brand
      */ 
@@ -104,8 +106,9 @@ class Toys extends Products {
 
         return $this;
     }
-    // /methods
+    // // getter & setter
 }
 
+// instances are in data.php
 
 ?>

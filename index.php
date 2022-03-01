@@ -1,14 +1,3 @@
-<!-- L’e-commerce vende prodotti per gli animali.
-I prodotti saranno oltre al cibo, anche giochi, cucce, etc.
-L’utente potrà sia comprare i prodotti senza registrarsi, oppure iscriversi e ricevere il 20% di sconto
-su tutti i prodotti.
-Il pagamento avviene con la carta di credito, che non deve essere scaduta.
-BONUS:
-Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibili solo in un periodo 
-particolare (es. da maggio ad agosto). -->
-
-
-
 <?php
 
 include __DIR__ . "/db/data.php";
@@ -27,12 +16,48 @@ include __DIR__ . "/db/data.php";
 
 <body>
 
+    <h2>Gli accessori nel nostro shop:</h2>
     <!-- php -->
-    <?php foreach ($users as $user) { ?>
-        <h5> <?php echo ($user->getUserDetails()) ?></h5>
+    <?php foreach ($accessoiresList as $products) { ?>
+
+        <p>Il prodotto: <?php echo ($products->getProductName()) ?></p>
+        <p>Il brand: <?php echo ($products->getBrand()) ?></p>
+        <p>Il tipo: <?php echo ($products->getProductType()) ?></p>
+        <p>Il colore: <?php echo ($products->getColor()) ?></p>
+        <p>Il prezzo: <?php echo ($products->getPrice()) ?> €</p>
+
+        <hr><br>
+
     <?php } ?>
     <!-- / php -->
 
+    <h2>Il cibo nel nostro shop:</h2>
+    <!-- php -->
+    <?php foreach ($foodsList as $products) { ?>
+
+        <p>Il brand: <?php echo ($products->getBrand()) ?></p>
+        <p>Il peso: <?php echo ($products->getWeight()) ?> Kg</p>
+        <p>La data di scadenza: <?php echo ($products->getExpirationDate()) ?></p>
+        <p>Il prezzo: <?php echo ($products->getPrice()) ?> €</p>
+
+        <hr><br>
+
+    <?php } ?>
+    <!-- / php -->
+
+    <h2>I giochi nel nostro shop:</h2>
+    <!-- php -->
+    <?php foreach ($toysList as $products) { ?>
+
+        <p>Il brand: <?php echo ($products->getBrand()) ?></p>
+        <p>Il materiale: <?php echo ($products->getMaterial()) ?></p>
+        <p>Il colore: <?php echo ($products->getColor()) ?></p>
+        <p>Il prezzo: <?php echo ($products->getPrice()) ?> €</p>
+
+        <hr><br>
+
+    <?php } ?>
+    <!-- / php -->
 
 </body>
 
