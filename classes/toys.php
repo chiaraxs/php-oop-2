@@ -3,10 +3,10 @@ GIOCHI X ANIMALI -->
 
 <?php
 
-require_once __DIR__ . "/products.php";
+require_once __DIR__ . "/product.php";
 
 
-class Toys extends Products {
+class Toys extends Product{
 
     // variables
     protected string $brand;
@@ -15,7 +15,7 @@ class Toys extends Products {
     protected float $price;
     // / variables
 
-    // methods
+    // construct
     public function __construct(string $_productName, int $_productCode, string $_productType, string $_brand, string $_material, string $_color, float $_price){
         parent::__construct($_productName,$_productCode,$_productType);
 
@@ -24,7 +24,16 @@ class Toys extends Products {
         $this->color = $_color;
         $this->price = $_price;
     }
-    // methods
+    // construct
+
+    // funzione che richiama print nel padre (product) e aggiunge variabili
+    public function print()
+    {
+        return $this->brand . "<br>" . "Categoria:" . parent::print() . "<br>" . "Materiale:" . $this->material . "<br>" . "Colore:" . $this->color . " <br>" . "Prezzo:" . $this->price . "Є";
+
+    }
+    // / funzione che richiama print nel padre (product) e aggiunge variabili
+
     
     // getter & setter
     /**

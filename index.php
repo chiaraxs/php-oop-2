@@ -16,45 +16,13 @@ include __DIR__ . "/db/data.php";
 
 <body>
 
-    <h2>Gli accessori nel nostro shop:</h2>
+    <h2>I prodotti nel nostro shop:</h2>
+    
     <!-- php -->
-    <?php foreach ($accessoiresList as $products) { ?>
+    <?php foreach ($items as $item) { ?>
 
-        <p>Il prodotto: <?php echo ($products->getProductName()) ?></p>
-        <p>Il brand: <?php echo ($products->getBrand()) ?></p>
-        <p>Il tipo: <?php echo ($products->getProductType()) ?></p>
-        <p>Il colore: <?php echo ($products->getColor()) ?></p>
-        <p>Il prezzo: <?php echo ($products->getPrice()) ?> €</p>
-
-        <hr><br>
-
-    <?php } ?>
-    <!-- / php -->
-
-    <h2>Il cibo nel nostro shop:</h2>
-    <!-- php -->
-    <?php foreach ($foodsList as $products) { ?>
-
-        <p>Il brand: <?php echo ($products->getBrand()) ?></p>
-        <p>Il peso: <?php echo ($products->getWeight()) ?> Kg</p>
-        <p>La data di scadenza: <?php echo ($products->getExpirationDate()) ?></p>
-        <p>Il prezzo: <?php echo ($products->getPrice()) ?> €</p>
-
-        <hr><br>
-
-    <?php } ?>
-    <!-- / php -->
-
-    <h2>I giochi nel nostro shop:</h2>
-    <!-- php -->
-    <?php foreach ($toysList as $products) { ?>
-
-        <p>Il brand: <?php echo ($products->getBrand()) ?></p>
-        <p>Il materiale: <?php echo ($products->getMaterial()) ?></p>
-        <p>Il colore: <?php echo ($products->getColor()) ?></p>
-        <p>Il prezzo: <?php echo ($products->getPrice()) ?> €</p>
-
-        <hr><br>
+        <p>Brand: <?php echo ($item->print()) ?></p>
+        <hr>
 
     <?php } ?>
     <!-- / php -->

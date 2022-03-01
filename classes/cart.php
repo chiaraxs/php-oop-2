@@ -7,7 +7,15 @@ require_once __DIR__ . "/user.php";
 require_once __DIR__ . "/creditCard.php";
 
 class Cart {
-    protected float $totalPrice;
+    protected array $items=[];
+
+    public function getTotal(){
+        // stampa totale
+    }
+
+    public function addItem(Product $item){
+        
+    }
 }
 
 // $cart = new Cart($user, $products);

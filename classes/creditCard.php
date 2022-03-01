@@ -13,7 +13,7 @@ class creditCard extends User{
     private string $expiryDate;
     // / variables
 
-    // methods
+    // construct
     function __construct(string $_nameOwner, string $_surnameOwner, string $_numberCard, int $_cvv, string $_expiryDate )
     {
         $this->nameOwner = $_nameOwner;
@@ -22,7 +22,7 @@ class creditCard extends User{
         $this->cvv = $_cvv;
         $this->expiryDate = $_expiryDate;
     }
-    // / methods
+    // / construct
 
     // getter & setter
     /**

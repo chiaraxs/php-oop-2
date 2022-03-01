@@ -4,20 +4,22 @@ ACCESSORI: CUCCE, GUINZAGLI, COLLARI -->
 
 <?php
 
-require_once __DIR__ . "/products.php";
+require_once __DIR__ . "/product.php";
 
 
-class Accessoires extends Products {
+class Accessoires extends Product
+{
 
     // variables
     protected string $brand;
     protected string $materialAccessoires;
-    protected int $color;
+    protected string $color;
     protected float $price;
     // / variables
 
-    // methods
-    public function __construct(string $_productName, int $_productCode, string $_productType, string $_brand, string $_materialAccessoires, string $_color, float $_price){
+    // construct
+    public function __construct(string $_productName, int $_productCode, string $_productType, string $_brand, string $_materialAccessoires, string $_color, float $_price)
+    {
         parent::__construct($_productName, $_productCode, $_productType);
 
         $this->brand = $_brand;
@@ -25,12 +27,20 @@ class Accessoires extends Products {
         $this->color = $_color;
         $this->price = $_price;
     }
-    // / methods 
-    
+    // / construct 
+
+    // funzione che richiama print nel padre (product) e aggiunge variabili
+    public function print()
+    {
+        return $this->brand . "<br>" . "Categoria:" . parent::print() . "<br>" . "Materiale:" . $this->materialAccessoires . "<br>" . "Colore:" . $this->color . " <br>" . "Prezzo:" . $this->price . "Є";
+
+    }
+    // / funzione che richiama print nel padre (product) e aggiunge variabili
+
     // getter & setter
     /**
      * Get the value of brand
-     */ 
+     */
     public function getBrand()
     {
         return $this->brand;
@@ -40,7 +50,7 @@ class Accessoires extends Products {
      * Set the value of brand
      *
      * @return  self
-     */ 
+     */
     public function setBrand($brand)
     {
         $this->brand = $brand;
@@ -50,7 +60,7 @@ class Accessoires extends Products {
 
     /**
      * Get the value of materialAccessoires
-     */ 
+     */
     public function getMaterialAccessoires()
     {
         return $this->materialAccessoires;
@@ -60,7 +70,7 @@ class Accessoires extends Products {
      * Set the value of materialAccessoires
      *
      * @return  self
-     */ 
+     */
     public function setMaterialAccessoires($materialAccessoires)
     {
         $this->materialAccessoires = $materialAccessoires;
@@ -70,7 +80,7 @@ class Accessoires extends Products {
 
     /**
      * Get the value of color
-     */ 
+     */
     public function getColor()
     {
         return $this->color;
@@ -80,7 +90,7 @@ class Accessoires extends Products {
      * Set the value of color
      *
      * @return  self
-     */ 
+     */
     public function setColor($color)
     {
         $this->color = $color;
@@ -90,7 +100,7 @@ class Accessoires extends Products {
 
     /**
      * Get the value of price
-     */ 
+     */
     public function getPrice()
     {
         return $this->price;
@@ -100,7 +110,7 @@ class Accessoires extends Products {
      * Set the value of price
      *
      * @return  self
-     */ 
+     */
     public function setPrice($price)
     {
         $this->price = $price;
@@ -108,7 +118,7 @@ class Accessoires extends Products {
         return $this;
     }
     // / getter & setter
-    
+
 }
 
 // instances are in data.php
