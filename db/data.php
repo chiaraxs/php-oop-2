@@ -35,7 +35,12 @@ $items = [
 
 ];
 
-$cart = [];
+$cartProducts = [
+    new Food("Mangime per animali", 456, "Cibo", "Natural Trainer", "25-12-25", 4, 12),
+    new Toys("Giochi per animali", 123, "Gioco per cani", "Dog World", "rubber", "red", 15.35),
+    new Accessoires("Accessori per animali", 156, "Cuccia", "Meow Cat", "tissue", "black", 50.60),
+];
+
 
 var_dump($users);
 var_dump($items);
